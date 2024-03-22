@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="CSS/style.css">
+   <link rel="stylesheet" href="CSS/queries.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+   <link rel="icon" href="ICONS/icon.png" />
+   <!-- <link rel="apple-touch-icon" href="img/apple-touch-icon.png" /> -->
+   <link rel="manifest" href="manifest.webmanifest" />
+
+   <title>To-Do list App</title>
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+   <script type="module" src="JS/script.js"></script>
+</head>
+
+<body>
+   <header class="header">
+      <h1 class="welcome">Inicie Sessão para começar</h1>
+      <div class="header-logo">
+         <img src="ICONS/cube-outline.svg" alt="">
+         <h2 class="welcome-label"> TO DO LIST APP</h2>
+      </div>
+      <!-- <button class=" login-header">Iniciar Sessão para começar</button> -->
+      <button class="logout-btn main-btn"><span>Terminar sessão </span> <img src="ICONS/log-out.svg" alt=""> </button>
+
+   </header>
+   <button class="displayAdd addTaskIcon">
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <!-- <img src="ICONS/add-circle-outline.svg" alt=""> -->
+   </button>
+   <section class="app">
+
+      <form action="" class="form">
+         <div class="form-header">
+
+            <span class="task-table-tag"> <ion-icon name="add-circle-outline"></ion-icon> <span>Adicione, gerencie e
+                  elimine as
+                  suas tarefas com To do
+                  List</span> <span class="todo-logo"></span></span>
+
+         </div>
+         <label for="titulo-tafera">Título da Tarefa</label>
+         <input type="text" class="input-add-task-name" placeholder="Título da Tarefa">
+         <label for="titulo-tafera">Descrição da Tarefa</label>
+         <input type="text" class="input-add-task" placeholder="Descrição da Tarefa">
+         <label for="">Marcar Prioridade</label>
+         <select name="" id="" class="select-priority">
+            <option value="" selected>Nenhuma Prioridade</option>
+            <option value="Alta">Alta</option>
+            <option value="Média">Média</option>
+            <option value="Baixa">Baixa</option>
+
+         </select>
+         <button class="add-task-btn main-btn">Adicionar Nova Tarefa</button>
+      </form>
+
+      <div class="task-table">
+
+         <div class="task-table-header">
+
+            <ion-icon name="list-outline" class="icon-list"></ion-icon>
+            <p>Data</p>
+         </div>
+         <div class="tasks-container">
+            <div class="empty-box hidden">
+               <p>Não tens nenhuma tarefa, adicione uma</p>
+            </div>
+
+            <div class="task ">
+               <span class="task-number">03</span>
+               <div class="task-container">
+
+                  <header class="task-header">Avaliação de Provas</header>
+                  <div class="task-contents">
+
+                     <div class="tesk-content">
+                        <p class="task-text">Lorem ipsum dolor sit amet consectetur</p>
+                     </div>
+                     <div class="prioDiv">
+                        <span class="priority-low">Baixa</span>
+                     </div>
+                     <div class="mark-parent">
+                        <!-- <ion-icon name="ellipsis-horizontal-circle-outline" class="setts"></ion-icon> -->
+                        <div class="marcar">
+                           <button class="task-finished"> <ion-icon name="checkmark-circle-outline"
+                                 class="icon-conclude"></ion-icon><span class="conclude-span">Concluir </span></button>
+                           <button class="task-delete"><ion-icon name="trash-outline"></ion-icon><span
+                                 class="delete-span">Eliminar</span></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+         <div class="task-status">
+            <p> <ion-icon name="checkmark-circle-outline"></ion-icon> <span>
+                  <span class="label">Concluídas: </span>
+                  <span class="label-concluido">50</span>
+               </span>
+            </p>
+            <p> <ion-icon name="hourglass-outline"></ion-icon><span> <span class="label">Progresso: </span><span
+                     class="label-progresso">50</span></span></p>
+            <span class="label">Total: </span>
+            <p> <ion-icon name="reader-outline"></ion-icon><span> <span class="label-total">50</span></span></p>
+            <!-- <button class="btn-sort">&downarrow; Ordem</button> -->
+         </div>
+      </div>
+   </section>
+
+   <section class="see-all-task hidden">
+      <div class="div-all ">
+         <img src="ICONS/close.svg" alt="" class="see-close btn-close-see">
+         <div class="see-head-span">
+            <span class="see-task-status">Em progresso</span>
+            <span class="task-see-date">01/01/1999</span>
+         </div>
+
+         <h2 class="task-see-header">HEADER</h2>
+         <p class="task-see-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, assumenda, totam
+            unde necessitatibus excepturi praesentium blanditiis illo nemo distinctio corporis molestia</p>
+         <button class="btn-edit main-btn">Editar Tarefa</button>
+      </div>
+
+      <div class="edit-task display-none">
+         <img src="ICONS/close.svg" alt="" class="see-close btn-close-see">
+         <h2 class="heading-edit">Editar Tarefa</h2>
+         <label for="title">Título</label>
+         <input type="text" placeholder="Título" class="edit-input-title">
+         <label for="title">Descrição</label>
+         <input type="text" placeholder="Descrição" class="edit-input-descriptions">
+
+         <label for="">Selecionar </label>
+         <select name="" id="" class="edit-priority">
+            <option value="Alta">Alta</option>
+            <option value="Média">Média</option>
+            <option value="Baixa">Baixa</option>
+         </select>
+         <button class="btn-edited">Guardar Alteração</button>
+      </div>
+      <div class="blured"></div>
+
+   </section>
+   <section class="login-app">
+      <h2 class="login-heading">Login</h2>
+      <form action="" class="login-form">
+         <label for="username" class="label"> <span>Nome de usuário</span> <ion-icon
+               name="person-outline"></ion-icon></label>
+         <input type="text" name="username" id="username" class="username-login" placeholder="">
+         <label for="password" class="label"><span>Senha</span><ion-icon name="lock-closed-outline"></ion-icon></label>
+         <input type="password" name="username" id="password" class="password-login" maxlength="8" placeholder="">
+         <button class="login-btn main-btn">Iniciar sessão </button>
+         <div>
+            <span>Não tem uma conta? <a href="#" class="btn-create-account">criar conta</a></span>
+         </div>
+      </form>
+   </section>
+   <section class="create-app">
+      <h2 class="login-heading">Criar Conta</h2>
+      <form action="" class="create-form">
+         <label for="fullname-c" class="label"> <span>Nome de completo</span><ion-icon
+               name="wallet-outline"></ion-icon></label>
+         <input type="text" name="fullname" id="fullname-c" class="fullname-create" placeholder="">
+         <label for="username-c" class="label"> <span>Nome de usuário </span><ion-icon
+               name="person-outline"></ion-icon></label>
+         <input type="text" name="username" id="username-c" class="username-create" placeholder="">
+         <label for="password-c" class="label"><span>Senha</span> <ion-icon
+               name="lock-closed-outline"></ion-icon></label>
+         <input type="password" name="username" id="password-c" class="password-create" maxlength="8" placeholder="">
+         <button class="create-btn main-btn">Criar conta</button>
+         <div>
+            <span>Já tem uma conta? <a href="#" class="btn-login-account">inicie sessão</a></span>
+         </div>
+      </form>
+   </section>
+</body>
+
+</html>
