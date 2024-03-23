@@ -30,7 +30,8 @@
          <h2 class="welcome-label"> TO DO LIST APP</h2>
       </div>
       <!-- <button class=" login-header">Iniciar Sessão para começar</button> -->
-      <button class="logout-btn main-btn"><span>Terminar sessão </span> <img src="ICONS/log-out.svg" alt=""> </button>
+      <button class="logout-btn main-btn"><span>Sair </span> <ion-icon name="log-out-outline"></ion-icon>
+      </button>
 
    </header>
    <button class="displayAdd addTaskIcon">
@@ -158,7 +159,12 @@
                name="person-outline"></ion-icon></label>
          <input type="text" name="username" id="username" class="username-login" placeholder="">
          <label for="password" class="label"><span>Senha</span><ion-icon name="lock-closed-outline"></ion-icon></label>
-         <input type="password" name="username" id="password" class="password-login" maxlength="8" placeholder="">
+         <input type="password" name="username" id="password" class="password-login" maxlength="40" minlength="4"
+            placeholder="">
+         <button class="btn-see-password">
+            <ion-icon name="eye-off-outline" class="display-none eye-off-outline"></ion-icon>
+            <ion-icon name="eye-outline" class="eye-outline"></ion-icon>
+         </button>
          <button class="login-btn main-btn">Iniciar sessão </button>
          <div>
             <span>Não tem uma conta? <a href="#" class="btn-create-account">criar conta</a></span>
@@ -176,7 +182,12 @@
          <input type="text" name="username" id="username-c" class="username-create" placeholder="">
          <label for="password-c" class="label"><span>Senha</span> <ion-icon
                name="lock-closed-outline"></ion-icon></label>
-         <input type="password" name="username" id="password-c" class="password-create" maxlength="8" placeholder="">
+         <input type="password" name="username" id="password-c" class="password-create" maxlength="40" minlength="4"
+            placeholder="">
+         <button class="btn-see-password create-see">
+            <ion-icon name="eye-off-outline" class="display-none eye-off-outline--1"></ion-icon>
+            <ion-icon name="eye-outline" class="eye-outline--1"></ion-icon>
+         </button>
          <button class="create-btn main-btn">Criar conta</button>
          <div>
             <span>Já tem uma conta? <a href="#" class="btn-login-account">inicie sessão</a></span>
