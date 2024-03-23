@@ -451,6 +451,7 @@ btnLogOut.addEventListener("click", function (e) {
   taskContainer.innerHTML = "";
   document.querySelector(".welcome").textContent = "Inicie Sessão para começar";
   btnLogOut.classList.add("hidden");
+  displayAddBtn.classList.add("hidden");
 });
 // app.addEventListener("click", function (e) {
 //   e.preventDefault();
@@ -511,5 +512,35 @@ btnCloseSee.forEach(function (btn) {
     editDivEl.classList.toggle("display-none");
     seeAllDEl.classList.toggle("display-none");
     sectionSeeAll.classList.add("hidden");
+  });
+});
+
+const btnSeePassword = document.querySelectorAll(".btn-see-password");
+const seeIconOn = document.querySelector(".eye-outline");
+const seeIconOff = document.querySelector(".eye-off-outline");
+const seeIconOn1 = document.querySelector(".eye-outline--1");
+const seeIconOff1 = document.querySelector(".eye-off-outline--1");
+btnSeePassword.forEach((btn) => {
+  btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    if (inputPasswordLogin.type === "password") {
+      inputPasswordLogin.type = "text";
+      seeIconOff.classList.remove("display-none");
+      seeIconOn.classList.add("display-none");
+    } else if (inputPasswordLogin.type === "text") {
+      inputPasswordLogin.type = "password";
+      seeIconOff.classList.add("display-none");
+      seeIconOn.classList.remove("display-none");
+    }
+
+    if (inputPasswordCreate.type === "password") {
+      inputPasswordCreate.type = "text";
+      seeIconOff1.classList.remove("display-none");
+      seeIconOn1.classList.add("display-none");
+    } else if (inputPasswordCreate.type === "text") {
+      inputPasswordCreate.type = "password";
+      seeIconOff1.classList.add("display-none");
+      seeIconOn1.classList.remove("display-none");
+    }
   });
 });
