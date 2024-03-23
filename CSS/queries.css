@@ -155,6 +155,10 @@
   html {
     font-size: 50%;
   }
+  body {
+    background: #e6e5e3;
+    /* background-color: ; */
+  }
   .form {
     width: 80%;
   }
@@ -168,6 +172,17 @@
   }
   .tesk-content {
     grid-column: span -2;
+  }
+  .btn-see-password {
+    right: 13%;
+    bottom: 36%;
+  }
+  .create-see {
+    right: 12%;
+    bottom: 27.8%;
+  }
+  ion-icon {
+    font-size: 20px;
   }
 }
 @media (max-width: 21em) {
@@ -186,5 +201,55 @@
   }
   .task-status {
     justify-content: center;
+  }
+  .btn-see-password {
+    right: 13%;
+    bottom: 35%;
+  }
+  .create-see {
+    right: 13%;
+    bottom: 27%;
+  }
+  ion-icon {
+    font-size: 18px;
+  }
+}
+@media (max-width: 18em) {
+  .btn-see-password {
+    right: 16%;
+    bottom: 35.5%;
+  }
+  .create-see {
+    right: 15%;
+    bottom: 27.8%;
+  }
+  ion-icon {
+    font-size: 16px;
+  }
+}
+@media (max-width: 16.37em) {
+  .btn-see-password {
+    right: 16%;
+    bottom: 34%;
+  }
+  .create-see {
+    right: 16%;
+    bottom: 27.8%;
+  }
+}
+@media (max-width: 14.75em) {
+  .btn-see-password {
+    right: 17%;
+    bottom: 36%;
+  }
+  .create-app {
+    padding: 3rem;
+    padding-top: 5rem;
+    margin: auto;
+  }
+  .login-app {
+    padding: 3rem;
+    padding-top: 5rem;
+    margin: auto;
   }
 }

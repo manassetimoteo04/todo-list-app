@@ -16,6 +16,10 @@ body {
   overflow-x: hidden;
   position: relative;
 }
+link[rel="icon"] {
+  /* Define a cor de preenchimento do ícone */
+  stroke: #fff; /* Cor vermelha */
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -47,6 +51,7 @@ body {
   box-shadow: 0 2.3rem 3.2rem rgba(0, 0, 0, 0.09);
   padding: 5rem;
   transition: 0.5s;
+  position: relative;
   /* display: none; */
 }
 .create-app {
@@ -58,6 +63,7 @@ body {
   box-shadow: 0 2.3rem 3.2rem rgba(0, 0, 0, 0.09);
   padding: 5rem;
   transition: 0.5s;
+  position: relative;
 }
 .login-heading {
   text-align: center;
@@ -635,4 +641,26 @@ img {
   font-size: 4.2rem;
   box-shadow: 0 2.3rem 3.2rem rgba(0, 0, 0, 0.09);
   color: #fff;
+}
+.btn-see-password {
+  background: none;
+  width: 3rem;
+  height: 3rem;
+  right: 12%;
+  bottom: 35.6%;
+  position: absolute;
+}
+.btn-see-password ion-icon {
+  font-size: 2.2rem;
+  color: #5870f7da;
+}
+.create-see {
+  right: 12%;
+  bottom: 27.8%;
+}
+.logout-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
 }
